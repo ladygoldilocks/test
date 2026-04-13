@@ -1,1 +1,840 @@
-
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalendarz 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+      color: #1a1a2e;
+    }
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .month {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .month-header {
+      background: #1a1a2e;
+      color: #fff;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .month table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .month th {
+      padding: 8px 0;
+      font-size: 0.75rem;
+      color: #888;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .month td {
+      text-align: center;
+      padding: 7px 0;
+      font-size: 0.9rem;
+    }
+    .month td.empty {
+      color: transparent;
+    }
+    .month td.day:hover {
+      background: #e8eaf6;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .month td.weekend {
+      color: #e53935;
+    }
+    .month td.sunday {
+      color: #c62828;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1>📅 Kalendarz 2026</h1>
+  <div class="calendar-grid">
+    <div class="month">
+      <div class="month-header">Styczeń</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day">1</td>
+          <td class="day">2</td>
+          <td class="day weekend">3</td>
+          <td class="day weekend sunday">4</td>
+        </tr>
+        <tr>
+          <td class="day">5</td>
+          <td class="day">6</td>
+          <td class="day">7</td>
+          <td class="day">8</td>
+          <td class="day">9</td>
+          <td class="day weekend">10</td>
+          <td class="day weekend sunday">11</td>
+        </tr>
+        <tr>
+          <td class="day">12</td>
+          <td class="day">13</td>
+          <td class="day">14</td>
+          <td class="day">15</td>
+          <td class="day">16</td>
+          <td class="day weekend">17</td>
+          <td class="day weekend sunday">18</td>
+        </tr>
+        <tr>
+          <td class="day">19</td>
+          <td class="day">20</td>
+          <td class="day">21</td>
+          <td class="day">22</td>
+          <td class="day">23</td>
+          <td class="day weekend">24</td>
+          <td class="day weekend sunday">25</td>
+        </tr>
+        <tr>
+          <td class="day">26</td>
+          <td class="day">27</td>
+          <td class="day">28</td>
+          <td class="day">29</td>
+          <td class="day">30</td>
+          <td class="day weekend">31</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Luty</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day weekend sunday">1</td>
+        </tr>
+        <tr>
+          <td class="day">2</td>
+          <td class="day">3</td>
+          <td class="day">4</td>
+          <td class="day">5</td>
+          <td class="day">6</td>
+          <td class="day weekend">7</td>
+          <td class="day weekend sunday">8</td>
+        </tr>
+        <tr>
+          <td class="day">9</td>
+          <td class="day">10</td>
+          <td class="day">11</td>
+          <td class="day">12</td>
+          <td class="day">13</td>
+          <td class="day weekend">14</td>
+          <td class="day weekend sunday">15</td>
+        </tr>
+        <tr>
+          <td class="day">16</td>
+          <td class="day">17</td>
+          <td class="day">18</td>
+          <td class="day">19</td>
+          <td class="day">20</td>
+          <td class="day weekend">21</td>
+          <td class="day weekend sunday">22</td>
+        </tr>
+        <tr>
+          <td class="day">23</td>
+          <td class="day">24</td>
+          <td class="day">25</td>
+          <td class="day">26</td>
+          <td class="day">27</td>
+          <td class="day weekend">28</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Marzec</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day weekend sunday">1</td>
+        </tr>
+        <tr>
+          <td class="day">2</td>
+          <td class="day">3</td>
+          <td class="day">4</td>
+          <td class="day">5</td>
+          <td class="day">6</td>
+          <td class="day weekend">7</td>
+          <td class="day weekend sunday">8</td>
+        </tr>
+        <tr>
+          <td class="day">9</td>
+          <td class="day">10</td>
+          <td class="day">11</td>
+          <td class="day">12</td>
+          <td class="day">13</td>
+          <td class="day weekend">14</td>
+          <td class="day weekend sunday">15</td>
+        </tr>
+        <tr>
+          <td class="day">16</td>
+          <td class="day">17</td>
+          <td class="day">18</td>
+          <td class="day">19</td>
+          <td class="day">20</td>
+          <td class="day weekend">21</td>
+          <td class="day weekend sunday">22</td>
+        </tr>
+        <tr>
+          <td class="day">23</td>
+          <td class="day">24</td>
+          <td class="day">25</td>
+          <td class="day">26</td>
+          <td class="day">27</td>
+          <td class="day weekend">28</td>
+          <td class="day weekend sunday">29</td>
+        </tr>
+        <tr>
+          <td class="day">30</td>
+          <td class="day">31</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Kwiecień</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day">1</td>
+          <td class="day">2</td>
+          <td class="day">3</td>
+          <td class="day weekend">4</td>
+          <td class="day weekend sunday">5</td>
+        </tr>
+        <tr>
+          <td class="day">6</td>
+          <td class="day">7</td>
+          <td class="day">8</td>
+          <td class="day">9</td>
+          <td class="day">10</td>
+          <td class="day weekend">11</td>
+          <td class="day weekend sunday">12</td>
+        </tr>
+        <tr>
+          <td class="day">13</td>
+          <td class="day">14</td>
+          <td class="day">15</td>
+          <td class="day">16</td>
+          <td class="day">17</td>
+          <td class="day weekend">18</td>
+          <td class="day weekend sunday">19</td>
+        </tr>
+        <tr>
+          <td class="day">20</td>
+          <td class="day">21</td>
+          <td class="day">22</td>
+          <td class="day">23</td>
+          <td class="day">24</td>
+          <td class="day weekend">25</td>
+          <td class="day weekend sunday">26</td>
+        </tr>
+        <tr>
+          <td class="day">27</td>
+          <td class="day">28</td>
+          <td class="day">29</td>
+          <td class="day">30</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Maj</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day">1</td>
+          <td class="day weekend">2</td>
+          <td class="day weekend sunday">3</td>
+        </tr>
+        <tr>
+          <td class="day">4</td>
+          <td class="day">5</td>
+          <td class="day">6</td>
+          <td class="day">7</td>
+          <td class="day">8</td>
+          <td class="day weekend">9</td>
+          <td class="day weekend sunday">10</td>
+        </tr>
+        <tr>
+          <td class="day">11</td>
+          <td class="day">12</td>
+          <td class="day">13</td>
+          <td class="day">14</td>
+          <td class="day">15</td>
+          <td class="day weekend">16</td>
+          <td class="day weekend sunday">17</td>
+        </tr>
+        <tr>
+          <td class="day">18</td>
+          <td class="day">19</td>
+          <td class="day">20</td>
+          <td class="day">21</td>
+          <td class="day">22</td>
+          <td class="day weekend">23</td>
+          <td class="day weekend sunday">24</td>
+        </tr>
+        <tr>
+          <td class="day">25</td>
+          <td class="day">26</td>
+          <td class="day">27</td>
+          <td class="day">28</td>
+          <td class="day">29</td>
+          <td class="day weekend">30</td>
+          <td class="day weekend sunday">31</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Czerwiec</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="day">1</td>
+          <td class="day">2</td>
+          <td class="day">3</td>
+          <td class="day">4</td>
+          <td class="day">5</td>
+          <td class="day weekend">6</td>
+          <td class="day weekend sunday">7</td>
+        </tr>
+        <tr>
+          <td class="day">8</td>
+          <td class="day">9</td>
+          <td class="day">10</td>
+          <td class="day">11</td>
+          <td class="day">12</td>
+          <td class="day weekend">13</td>
+          <td class="day weekend sunday">14</td>
+        </tr>
+        <tr>
+          <td class="day">15</td>
+          <td class="day">16</td>
+          <td class="day">17</td>
+          <td class="day">18</td>
+          <td class="day">19</td>
+          <td class="day weekend">20</td>
+          <td class="day weekend sunday">21</td>
+        </tr>
+        <tr>
+          <td class="day">22</td>
+          <td class="day">23</td>
+          <td class="day">24</td>
+          <td class="day">25</td>
+          <td class="day">26</td>
+          <td class="day weekend">27</td>
+          <td class="day weekend sunday">28</td>
+        </tr>
+        <tr>
+          <td class="day">29</td>
+          <td class="day">30</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Lipiec</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day">1</td>
+          <td class="day">2</td>
+          <td class="day">3</td>
+          <td class="day weekend">4</td>
+          <td class="day weekend sunday">5</td>
+        </tr>
+        <tr>
+          <td class="day">6</td>
+          <td class="day">7</td>
+          <td class="day">8</td>
+          <td class="day">9</td>
+          <td class="day">10</td>
+          <td class="day weekend">11</td>
+          <td class="day weekend sunday">12</td>
+        </tr>
+        <tr>
+          <td class="day">13</td>
+          <td class="day">14</td>
+          <td class="day">15</td>
+          <td class="day">16</td>
+          <td class="day">17</td>
+          <td class="day weekend">18</td>
+          <td class="day weekend sunday">19</td>
+        </tr>
+        <tr>
+          <td class="day">20</td>
+          <td class="day">21</td>
+          <td class="day">22</td>
+          <td class="day">23</td>
+          <td class="day">24</td>
+          <td class="day weekend">25</td>
+          <td class="day weekend sunday">26</td>
+        </tr>
+        <tr>
+          <td class="day">27</td>
+          <td class="day">28</td>
+          <td class="day">29</td>
+          <td class="day">30</td>
+          <td class="day">31</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Sierpień</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day weekend">1</td>
+          <td class="day weekend sunday">2</td>
+        </tr>
+        <tr>
+          <td class="day">3</td>
+          <td class="day">4</td>
+          <td class="day">5</td>
+          <td class="day">6</td>
+          <td class="day">7</td>
+          <td class="day weekend">8</td>
+          <td class="day weekend sunday">9</td>
+        </tr>
+        <tr>
+          <td class="day">10</td>
+          <td class="day">11</td>
+          <td class="day">12</td>
+          <td class="day">13</td>
+          <td class="day">14</td>
+          <td class="day weekend">15</td>
+          <td class="day weekend sunday">16</td>
+        </tr>
+        <tr>
+          <td class="day">17</td>
+          <td class="day">18</td>
+          <td class="day">19</td>
+          <td class="day">20</td>
+          <td class="day">21</td>
+          <td class="day weekend">22</td>
+          <td class="day weekend sunday">23</td>
+        </tr>
+        <tr>
+          <td class="day">24</td>
+          <td class="day">25</td>
+          <td class="day">26</td>
+          <td class="day">27</td>
+          <td class="day">28</td>
+          <td class="day weekend">29</td>
+          <td class="day weekend sunday">30</td>
+        </tr>
+        <tr>
+          <td class="day">31</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Wrzesień</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="day">1</td>
+          <td class="day">2</td>
+          <td class="day">3</td>
+          <td class="day">4</td>
+          <td class="day weekend">5</td>
+          <td class="day weekend sunday">6</td>
+        </tr>
+        <tr>
+          <td class="day">7</td>
+          <td class="day">8</td>
+          <td class="day">9</td>
+          <td class="day">10</td>
+          <td class="day">11</td>
+          <td class="day weekend">12</td>
+          <td class="day weekend sunday">13</td>
+        </tr>
+        <tr>
+          <td class="day">14</td>
+          <td class="day">15</td>
+          <td class="day">16</td>
+          <td class="day">17</td>
+          <td class="day">18</td>
+          <td class="day weekend">19</td>
+          <td class="day weekend sunday">20</td>
+        </tr>
+        <tr>
+          <td class="day">21</td>
+          <td class="day">22</td>
+          <td class="day">23</td>
+          <td class="day">24</td>
+          <td class="day">25</td>
+          <td class="day weekend">26</td>
+          <td class="day weekend sunday">27</td>
+        </tr>
+        <tr>
+          <td class="day">28</td>
+          <td class="day">29</td>
+          <td class="day">30</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Październik</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day">1</td>
+          <td class="day">2</td>
+          <td class="day weekend">3</td>
+          <td class="day weekend sunday">4</td>
+        </tr>
+        <tr>
+          <td class="day">5</td>
+          <td class="day">6</td>
+          <td class="day">7</td>
+          <td class="day">8</td>
+          <td class="day">9</td>
+          <td class="day weekend">10</td>
+          <td class="day weekend sunday">11</td>
+        </tr>
+        <tr>
+          <td class="day">12</td>
+          <td class="day">13</td>
+          <td class="day">14</td>
+          <td class="day">15</td>
+          <td class="day">16</td>
+          <td class="day weekend">17</td>
+          <td class="day weekend sunday">18</td>
+        </tr>
+        <tr>
+          <td class="day">19</td>
+          <td class="day">20</td>
+          <td class="day">21</td>
+          <td class="day">22</td>
+          <td class="day">23</td>
+          <td class="day weekend">24</td>
+          <td class="day weekend sunday">25</td>
+        </tr>
+        <tr>
+          <td class="day">26</td>
+          <td class="day">27</td>
+          <td class="day">28</td>
+          <td class="day">29</td>
+          <td class="day">30</td>
+          <td class="day weekend">31</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Listopad</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="day weekend sunday">1</td>
+        </tr>
+        <tr>
+          <td class="day">2</td>
+          <td class="day">3</td>
+          <td class="day">4</td>
+          <td class="day">5</td>
+          <td class="day">6</td>
+          <td class="day weekend">7</td>
+          <td class="day weekend sunday">8</td>
+        </tr>
+        <tr>
+          <td class="day">9</td>
+          <td class="day">10</td>
+          <td class="day">11</td>
+          <td class="day">12</td>
+          <td class="day">13</td>
+          <td class="day weekend">14</td>
+          <td class="day weekend sunday">15</td>
+        </tr>
+        <tr>
+          <td class="day">16</td>
+          <td class="day">17</td>
+          <td class="day">18</td>
+          <td class="day">19</td>
+          <td class="day">20</td>
+          <td class="day weekend">21</td>
+          <td class="day weekend sunday">22</td>
+        </tr>
+        <tr>
+          <td class="day">23</td>
+          <td class="day">24</td>
+          <td class="day">25</td>
+          <td class="day">26</td>
+          <td class="day">27</td>
+          <td class="day weekend">28</td>
+          <td class="day weekend sunday">29</td>
+        </tr>
+        <tr>
+          <td class="day">30</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="month">
+      <div class="month-header">Grudzień</div>
+      <table>
+        <thead><tr>
+          <th>Pon</th>
+          <th>Wt</th>
+          <th>Śr</th>
+          <th>Czw</th>
+          <th>Pt</th>
+          <th>Sob</th>
+          <th>Nie</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="empty">&nbsp;</td>
+          <td class="day">1</td>
+          <td class="day">2</td>
+          <td class="day">3</td>
+          <td class="day">4</td>
+          <td class="day weekend">5</td>
+          <td class="day weekend sunday">6</td>
+        </tr>
+        <tr>
+          <td class="day">7</td>
+          <td class="day">8</td>
+          <td class="day">9</td>
+          <td class="day">10</td>
+          <td class="day">11</td>
+          <td class="day weekend">12</td>
+          <td class="day weekend sunday">13</td>
+        </tr>
+        <tr>
+          <td class="day">14</td>
+          <td class="day">15</td>
+          <td class="day">16</td>
+          <td class="day">17</td>
+          <td class="day">18</td>
+          <td class="day weekend">19</td>
+          <td class="day weekend sunday">20</td>
+        </tr>
+        <tr>
+          <td class="day">21</td>
+          <td class="day">22</td>
+          <td class="day">23</td>
+          <td class="day">24</td>
+          <td class="day">25</td>
+          <td class="day weekend">26</td>
+          <td class="day weekend sunday">27</td>
+        </tr>
+        <tr>
+          <td class="day">28</td>
+          <td class="day">29</td>
+          <td class="day">30</td>
+          <td class="day">31</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+          <td class="empty">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
